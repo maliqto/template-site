@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberNex - Hub de Ferramentas para Marketing Digital & Hacking</title>
+    <meta name="description" content="Hub completo de ferramentas e automações para marketing digital e hacking. Geração de exploits, IA Mindle Black, envio de SMS/E-mail e clonagem de páginas.">
+    <meta name="keywords" content="marketing digital, hacking, exploits, SMS, email, clonagem, automação, ferramentas">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/components.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 0L37.5 15H52.5L42 24L46.5 39L30 30L13.5 39L18 24L7.5 15H22.5L30 0Z" fill="url(#gradient1)"/>
+                    <defs>
+                        <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#9d00ff;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="loading-text">CyberNex</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <svg width="32" height="32" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 0L37.5 15H52.5L42 24L46.5 39L30 30L13.5 39L18 24L7.5 15H22.5L30 0Z" fill="url(#navGradient)"/>
+                    <defs>
+                        <linearGradient id="navGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#9d00ff;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="brand-text">CyberNex</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Início</a>
+                <a href="#features" class="nav-link">Recursos</a>
+                <a href="#pricing" class="nav-link">Preços</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="btn btn-outline" id="login-btn">Login</button>
+                <button class="btn btn-primary" id="register-btn">Registrar</button>
+                <button class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="matrix-rain"></div>
+            <div class="cyber-grid"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">CyberNex</span><br>
+                        <span class="typing-text">Marketing & Hacking Hub</span>
+                    </h1>
+                    <p class="hero-description">
+                        O hub mais completo de ferramentas e automações para marketing digital e hacking. 
+                        Geração de exploits, IA Mindle Black, envio de SMS/E-mail e clonagem de páginas em uma única plataforma.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">Campanhas Enviadas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Ferramentas Disponíveis</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Taxa de Sucesso</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-large" id="start-hacking-btn">
+                            <i class="fas fa-rocket"></i>
+                            Começar Agora
+                        </button>
+                        <button class="btn btn-outline btn-large" id="demo-btn">
+                            <i class="fas fa-play"></i>
+                            Ver Demo
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="terminal-title">cybernex@marketing-hub:~$</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="prompt">marketer@cybernex:~#</span>
+                                <span class="command typing-command">./launch_campaign --sms --email --target audience.csv</span>
+                            </div>
+                            <div class="terminal-output">
+                                <div class="output-line">Iniciando campanha de marketing...</div>
+                                <div class="output-line success">✓ Audiência carregada (15,847 contatos)</div>
+                                <div class="output-line">CANAL     STATUS   TAXA</div>
+                                <div class="output-line warning">SMS       ativo    98.2%</div>
+                                <div class="output-line warning">EMAIL     ativo    94.7%</div>
+                                <div class="output-line danger">CLONE     pronto   100%</div>
+                                <div class="output-line">IA Mindle: Otimizando mensagens...</div>
+                                <div class="output-line success">✓ Campanha lançada com sucesso!</div>
+                                <div class="output-line">Conversões esperadas: 2,341 leads</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ferramentas Poderosas</h2>
+                <p class="section-description">
+                    Hub completo de automações para marketing digital e hacking
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="feature-title">Geração de Exploits</h3>
+                    <p class="feature-description">
+                        Criação automática de exploits personalizados e payloads avançados para testes de penetração e hacking ético.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Custom Exploits</span>
+                        <span class="tag">Payloads</span>
+                        <span class="tag">Shellcode</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="feature-title">IA Mindle Black</h3>
+                    <p class="feature-description">
+                        Inteligência artificial avançada para automação de tarefas, análise de dados e geração de conteúdo inteligente.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">AI Assistant</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">Smart Analysis</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-sms"></i>
+                    </div>
+                    <h3 class="feature-title">Envio de SMS</h3>
+                    <p class="feature-description">
+                        Sistema avançado de envio de SMS em massa para campanhas de marketing e comunicação automatizada.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Bulk SMS</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="feature-title">Envio de E-mail</h3>
+                    <p class="feature-description">
+                        Plataforma completa de e-mail marketing com templates personalizados e automação avançada.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Email Marketing</span>
+                        <span class="tag">Templates</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-clone"></i>
+                    </div>
+                    <h3 class="feature-title">Clonagem de Página</h3>
+                    <p class="feature-description">
+                        Ferramenta avançada para clonagem e replicação de páginas web com alta fidelidade e personalização.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Web Cloning</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">Customization</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Analytics & Reports</h3>
+                    <p class="feature-description">
+                        Análise detalhada de campanhas com relatórios em tempo real e métricas avançadas de performance.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Real-time</span>
+                        <span class="tag">Metrics</span>
+                        <span class="tag">Reports</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Planos e Preços</h2>
+                <p class="section-description">
+                    Escolha o plano ideal para suas campanhas de marketing digital e hacking
+                </p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Starter</h3>
+                        <div class="pricing-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">29</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="pricing-description">Para iniciantes em marketing digital</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>1.000 créditos/mês</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Envio de SMS básico</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Envio de E-mail básico</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Suporte por email</span>
+                        </div>
+                        <div class="feature disabled">
+                            <i class="fas fa-times"></i>
+                            <span>IA Mindle Black</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline btn-full">Começar Agora</button>
+                </div>
+                
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-badge">Mais Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Professional</h3>
+                        <div class="pricing-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="pricing-description">Para profissionais de marketing</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>5.000 créditos/mês</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>IA Mindle Black</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Clonagem de páginas</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Analytics avançado</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Suporte prioritário</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-full">Começar Agora</button>
+                </div>
+                
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Enterprise</h3>
+                        <div class="pricing-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">299</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="pricing-description">Para equipes e empresas</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Créditos ilimitados</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Todas as ferramentas</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>API personalizada</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Geração de exploits</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Suporte 24/7</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline btn-full">Contatar Vendas</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2 class="section-title">Sobre o CyberNex</h2>
+                    <p class="about-description">
+                        Somos uma plataforma revolucionária que combina inteligência artificial avançada com expertise em marketing digital e cybersecurity. 
+                        Nossa missão é democratizar o acesso a ferramentas profissionais de marketing automatizado, hacking ético e análise de segurança.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <h4>IA Especializada</h4>
+                                <p>Modelos treinados para marketing digital e cybersecurity</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Ético e Seguro</h4>
+                                <p>Ferramentas para marketing automatizado e hacking ético</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Comunidade</h4>
+                                <p>Conecte-se com profissionais de marketing e segurança</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="code-title">exploit_generator.py</div>
+                        </div>
+                        <div class="code-body">
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span class="code-content"><span class="keyword">import</span> <span class="string">cybernex_marketing</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                <span class="code-content"></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">3</span>
+                                <span class="code-content"><span class="keyword">def</span> <span class="function">launch_campaign</span>(<span class="parameter">audience</span>):</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">4</span>
+                                <span class="code-content">    <span class="variable">ai</span> = <span class="string">cybernex_marketing.MindleAI()</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">5</span>
+                                <span class="code-content">    <span class="variable">campaign</span> = <span class="variable">ai</span>.<span class="function">optimize_messages</span>(<span class="parameter">audience</span>)</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">6</span>
+                                <span class="code-content">    <span class="keyword">return</span> <span class="variable">ai</span>.<span class="function">send_bulk</span>(<span class="parameter">campaign</span>)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-description">
+                    Tem dúvidas ou precisa de suporte? Nossa equipe está aqui para ajudar.
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@blackdigital.ai</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>+55 (11) 9999-9999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>São Paulo, Brasil</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" data-aos="fade-left">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        <label for="name">Nome</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Seu email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Assunto" required>
+                        <label for="subject">Assunto</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                        <label for="message">Mensagem</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <svg width="32" height="32" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30 0L37.5 15H52.5L42 24L46.5 39L30 30L13.5 39L18 24L7.5 15H22.5L30 0Z" fill="url(#footerGradient)"/>
+                            <defs>
+                                <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#9d00ff;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>CyberNex</span>
+                    </div>
+                    <p class="footer-description">
+                        Hub completo de ferramentas para marketing digital e hacking ético. 
+                        Automações profissionais para marketers e especialistas em segurança.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Recursos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Análise de Vulnerabilidades</a></li>
+                        <li><a href="#">Geração de Exploits</a></li>
+                        <li><a href="#">Network Reconnaissance</a></li>
+                        <li><a href="#">Malware Analysis</a></li>
+                        <li><a href="#">Threat Intelligence</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Imprensa</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Suporte</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentação</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 CyberNex. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="login-form">
+                    <div class="form-group">
+                        <input type="text" id="login-email" name="login" placeholder="Email ou Username" required>
+                        <label for="login-email">Email ou Username</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="login-password" name="password" placeholder="Senha" required>
+                        <label for="login-password">Senha</label>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox">
+                            <input type="checkbox" name="remember">
+                            <span class="checkmark"></span>
+                            Lembrar de mim
+                        </label>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Entrar
+                    </button>
+                </form>
+                <div class="modal-footer">
+                    <p>Não tem uma conta? <a href="#" id="switch-to-register">Registre-se</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Registrar</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="register-form">
+                    <div class="form-group">
+                        <input type="text" id="register-username" name="username" placeholder="Nome de usuário" required>
+                        <label for="register-username">Nome de usuário</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="register-email" name="email" placeholder="Email" required>
+                        <label for="register-email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="register-password" name="password" placeholder="Senha" required>
+                        <label for="register-password">Senha</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="register-confirm-password" name="confirmPassword" placeholder="Confirmar senha" required>
+                        <label for="register-confirm-password">Confirmar senha</label>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox">
+                            <input type="checkbox" name="acceptTerms" required>
+                            <span class="checkmark"></span>
+                            Aceito os <a href="#">Termos de Uso</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-user-plus"></i>
+                        Criar Conta
+                    </button>
+                </form>
+                <div class="modal-footer">
+                    <p>Já tem uma conta? <a href="#" id="switch-to-login">Faça login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/main.js?v=3"></script>
+    <script src="/js/auth.js?v=3"></script>
+    <script src="/js/animations.js?v=3"></script>
+</body>
+</html>

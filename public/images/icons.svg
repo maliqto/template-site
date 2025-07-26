@@ -1,0 +1,252 @@
+<svg width="0" height="0" style="position: absolute;">
+  <defs>
+    <!-- Gradientes -->
+    <linearGradient id="iconGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="iconGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff0080;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="iconGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff0080;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Filtros de brilho -->
+    <filter id="iconGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Ícone de IA/Cérebro -->
+    <symbol id="ai-brain" viewBox="0 0 24 24">
+      <path d="M12 2C8.5 2 6 4.5 6 8c0 1.5.5 3 1.5 4L6 14v4c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-4l-1.5-2c1-1 1.5-2.5 1.5-4 0-3.5-2.5-6-6-6z" 
+            fill="url(#iconGradient1)" filter="url(#iconGlow)"/>
+      <circle cx="9" cy="9" r="1" fill="#0a0a0a"/>
+      <circle cx="15" cy="9" r="1" fill="#0a0a0a"/>
+      <path d="M8 12h8M9 14h6" stroke="#0a0a0a" stroke-width="1" stroke-linecap="round"/>
+      <!-- Circuitos neurais -->
+      <g stroke="url(#iconGradient1)" stroke-width="0.5" fill="none" opacity="0.7">
+        <path d="M7 6c1-1 2-1 3 0M14 6c1-1 2-1 3 0"/>
+        <path d="M6 10c0-1 1-2 2-1M16 10c0-1 1-2 2-1"/>
+      </g>
+    </symbol>
+    
+    <!-- Ícone de Hacking/Terminal -->
+    <symbol id="hacking-terminal" viewBox="0 0 24 24">
+      <rect x="2" y="4" width="20" height="16" rx="2" 
+            fill="none" stroke="url(#iconGradient2)" stroke-width="2" filter="url(#iconGlow)"/>
+      <rect x="2" y="4" width="20" height="4" 
+            fill="url(#iconGradient2)" opacity="0.3"/>
+      <!-- Prompt -->
+      <text x="4" y="13" font-family="monospace" font-size="3" fill="#00ff88">$</text>
+      <rect x="6" y="11" width="8" height="1" fill="#00ff88"/>
+      <rect x="6" y="15" width="6" height="1" fill="#00d4ff"/>
+      <rect x="6" y="17" width="10" height="1" fill="#ff0080"/>
+      <!-- Cursor piscando -->
+      <rect x="14" y="11" width="1" height="2" fill="#00ff88">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </symbol>
+    
+    <!-- Ícone de Segurança/Escudo -->
+    <symbol id="security-shield" viewBox="0 0 24 24">
+      <path d="M12 2L4 6v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V6l-8-4z" 
+            fill="url(#iconGradient3)" filter="url(#iconGlow)"/>
+      <path d="M12 7L9 10l-1-1M12 7l3 3 1-1" 
+            stroke="#0a0a0a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="12" cy="14" r="2" fill="#0a0a0a"/>
+      <path d="M12 16v2" stroke="#0a0a0a" stroke-width="1.5" stroke-linecap="round"/>
+    </symbol>
+    
+    <!-- Ícone de Código -->
+    <symbol id="code-brackets" viewBox="0 0 24 24">
+      <path d="M8 6L2 12l6 6M16 6l6 6-6 6" 
+            stroke="url(#iconGradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+            fill="none" filter="url(#iconGlow)"/>
+      <path d="M14 4l-4 16" 
+            stroke="url(#iconGradient2)" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+    </symbol>
+    
+    <!-- Ícone de Análise/Gráfico -->
+    <symbol id="analytics-chart" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="2" 
+            fill="none" stroke="url(#iconGradient2)" stroke-width="1.5" filter="url(#iconGlow)"/>
+      <path d="M7 14l3-3 2 2 4-4" 
+            stroke="url(#iconGradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle cx="7" cy="14" r="1" fill="url(#iconGradient1)"/>
+      <circle cx="10" cy="11" r="1" fill="url(#iconGradient1)"/>
+      <circle cx="12" cy="13" r="1" fill="url(#iconGradient1)"/>
+      <circle cx="16" cy="9" r="1" fill="url(#iconGradient1)"/>
+      <!-- Barras de dados -->
+      <rect x="6" y="17" width="1" height="2" fill="url(#iconGradient3)" opacity="0.6"/>
+      <rect x="9" y="16" width="1" height="3" fill="url(#iconGradient3)" opacity="0.6"/>
+      <rect x="12" y="15" width="1" height="4" fill="url(#iconGradient3)" opacity="0.6"/>
+      <rect x="15" y="14" width="1" height="5" fill="url(#iconGradient3)" opacity="0.6"/>
+    </symbol>
+    
+    <!-- Ícone de Velocidade/Raio -->
+    <symbol id="speed-bolt" viewBox="0 0 24 24">
+      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" 
+            fill="url(#iconGradient2)" filter="url(#iconGlow)"/>
+      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" 
+            fill="none" stroke="url(#iconGradient1)" stroke-width="1" opacity="0.8"/>
+    </symbol>
+    
+    <!-- Ícone de Rede/Conexões -->
+    <symbol id="network-nodes" viewBox="0 0 24 24">
+      <g fill="url(#iconGradient1)" filter="url(#iconGlow)">
+        <circle cx="5" cy="5" r="2"/>
+        <circle cx="19" cy="5" r="2"/>
+        <circle cx="5" cy="19" r="2"/>
+        <circle cx="19" cy="19" r="2"/>
+        <circle cx="12" cy="12" r="3"/>
+      </g>
+      <g stroke="url(#iconGradient2)" stroke-width="1.5" opacity="0.6">
+        <line x1="7" y1="5" x2="10" y2="10"/>
+        <line x1="17" y1="5" x2="14" y2="10"/>
+        <line x1="7" y1="19" x2="10" y2="14"/>
+        <line x1="17" y1="19" x2="14" y2="14"/>
+        <line x1="5" y1="7" x2="5" y2="17"/>
+        <line x1="19" y1="7" x2="19" y2="17"/>
+      </g>
+    </symbol>
+    
+    <!-- Ícone de Dinheiro/Créditos -->
+    <symbol id="credits-coin" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" 
+              fill="url(#iconGradient3)" filter="url(#iconGlow)"/>
+      <circle cx="12" cy="12" r="7" 
+              fill="none" stroke="#0a0a0a" stroke-width="1" opacity="0.3"/>
+      <text x="12" y="16" text-anchor="middle" font-family="monospace" font-size="8" font-weight="bold" fill="#0a0a0a">$</text>
+      <g stroke="#0a0a0a" stroke-width="0.5" opacity="0.5">
+        <line x1="8" y1="8" x2="16" y2="8"/>
+        <line x1="8" y1="16" x2="16" y2="16"/>
+        <line x1="8" y1="8" x2="8" y2="16"/>
+        <line x1="16" y1="8" x2="16" y2="16"/>
+      </g>
+    </symbol>
+    
+    <!-- Ícone de Usuário/Perfil -->
+    <symbol id="user-profile" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4" 
+              fill="url(#iconGradient1)" filter="url(#iconGlow)"/>
+      <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" 
+            stroke="url(#iconGradient2)" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <!-- Detalhes do rosto -->
+      <circle cx="10" cy="7" r="0.5" fill="#0a0a0a"/>
+      <circle cx="14" cy="7" r="0.5" fill="#0a0a0a"/>
+      <path d="M10 9c1 1 3 1 4 0" stroke="#0a0a0a" stroke-width="0.5" stroke-linecap="round" fill="none"/>
+    </symbol>
+    
+    <!-- Ícone de Configurações/Engrenagem -->
+    <symbol id="settings-gear" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="3" 
+              fill="url(#iconGradient2)" filter="url(#iconGlow)"/>
+      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" 
+            stroke="url(#iconGradient1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </symbol>
+    
+    <!-- Ícone de Suporte/Ajuda -->
+    <symbol id="support-help" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" 
+              fill="none" stroke="url(#iconGradient3)" stroke-width="2" filter="url(#iconGlow)"/>
+      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" 
+            stroke="url(#iconGradient1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle cx="12" cy="17" r="1" fill="url(#iconGradient1)"/>
+    </symbol>
+    
+    <!-- Ícone de Notificação/Sino -->
+    <symbol id="notification-bell" viewBox="0 0 24 24">
+      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" 
+            stroke="url(#iconGradient2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+            fill="url(#iconGradient2)" fill-opacity="0.3" filter="url(#iconGlow)"/>
+      <path d="M13.73 21a2 2 0 0 1-3.46 0" 
+            stroke="url(#iconGradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Indicador de nova notificação -->
+      <circle cx="19" cy="5" r="2" fill="#ff0080">
+        <animate attributeName="r" values="2;3;2" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </symbol>
+    
+    <!-- Ícone de Download -->
+    <symbol id="download-arrow" viewBox="0 0 24 24">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" 
+            stroke="url(#iconGradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="7,10 12,15 17,10" 
+                stroke="url(#iconGradient2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                fill="none" filter="url(#iconGlow)"/>
+      <line x1="12" y1="15" x2="12" y2="3" 
+            stroke="url(#iconGradient2)" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    
+    <!-- Ícone de Upload -->
+    <symbol id="upload-arrow" viewBox="0 0 24 24">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" 
+            stroke="url(#iconGradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="17,8 12,3 7,8" 
+                stroke="url(#iconGradient2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                fill="none" filter="url(#iconGlow)"/>
+      <line x1="12" y1="3" x2="12" y2="15" 
+            stroke="url(#iconGradient2)" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    
+    <!-- Ícone de Busca/Lupa -->
+    <symbol id="search-magnify" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="8" 
+              stroke="url(#iconGradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+              fill="none" filter="url(#iconGlow)"/>
+      <path d="m21 21-4.35-4.35" 
+            stroke="url(#iconGradient2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Reflexo na lupa -->
+      <path d="M8 8l2 2" stroke="#ffffff" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+    </symbol>
+    
+    <!-- Ícone de Estrela/Favorito -->
+    <symbol id="star-favorite" viewBox="0 0 24 24">
+      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" 
+               fill="url(#iconGradient3)" filter="url(#iconGlow)"/>
+      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" 
+               fill="none" stroke="url(#iconGradient1)" stroke-width="1" opacity="0.8"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- Ícones individuais para uso direto -->
+
+<!-- Ícone de IA -->
+<svg class="icon icon-ai" width="24" height="24" style="display: none;">
+  <use href="#ai-brain"/>
+</svg>
+
+<!-- Ícone de Hacking -->
+<svg class="icon icon-hacking" width="24" height="24" style="display: none;">
+  <use href="#hacking-terminal"/>
+</svg>
+
+<!-- Ícone de Segurança -->
+<svg class="icon icon-security" width="24" height="24" style="display: none;">
+  <use href="#security-shield"/>
+</svg>
+
+<!-- Ícone de Código -->
+<svg class="icon icon-code" width="24" height="24" style="display: none;">
+  <use href="#code-brackets"/>
+</svg>
+
+<!-- Ícone de Análise -->
+<svg class="icon icon-analytics" width="24" height="24" style="display: none;">
+  <use href="#analytics-chart"/>
+</svg>
+
+<!-- Ícone de Velocidade -->
+<svg class="icon icon-speed" width="24" height="24" style="display: none;">
+  <use href="#speed-bolt"/>
+</svg>
