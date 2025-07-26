@@ -284,5 +284,6 @@ Para suporte técnico:
 
 ---
 
-*Desenvolvido com ❤️ pela equipe Black Digital*#   t e m p l a t e - s i t e  
+*Desenvolvido com ❤️ pela equipe Black Digital*#   t e m p l a t e - s i t e 
+ 
  
